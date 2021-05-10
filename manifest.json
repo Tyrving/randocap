@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Wikipedia Rand-O-Cap",
+  "version": "1.0",
+
+  "description": "Randomize capitalization on Wikipedia.",
+
+  "icons": {
+    "48": "icon48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.wikipedia.org/*"],
+      "js": ["randocap.js"]
+    }
+  ]
+
+}
